@@ -1,33 +1,101 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portafolio UI/UX - Nicolás Rincón</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio - Nicolás Rincón</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1>Nicolás Rincón</h1>
-    <p>Diseñador UI/UX e Ingeniero en Multimedia</p>
-  </header>
 
-  <section id="about">
-    <h2>Sobre mí</h2>
-    <p>Soy un diseñador UI/UX con experiencia en proyectos digitales, centrado en la experiencia del usuario y el diseño funcional.</p>
-  </section>
+  <!-- ======== NAVBAR ======== -->
+  <nav class="navbar">
+    <div class="logo-area">
+      <img src="logo.png" alt="Logo" class="logo">
+      <h1 class="name">Nicolás Rincón</h1>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#sobre-mi">Sobre mí</a></li>
+      <li><a href="#educacion">Educación</a></li>
+      <li><a href="#experiencia">Experiencia</a></li>
+      <li><a href="#contacto">Contáctame</a></li>
+    </ul>
+  </nav>
 
-  <section id="projects">
-    <h2>Proyectos Destacados</h2>
-    <div class="project">
-      <img src="proyecto1.png" alt="Proyecto 1">
-      <h3>Rediseño App Médica</h3>
-      <p>Optimización de flujos de usuario y mejora visual del sistema de citas médicas.</p>
+  <!-- ======== SOBRE MÍ ======== -->
+  <section id="sobre-mi" class="section about">
+    <div class="about-content">
+      <div class="about-img">
+        <img src="perfil.jpg" alt="Foto Nicolás Rincón">
+      </div>
+      <div class="about-text">
+        <h2>Sobre mí</h2>
+        <p>
+          Soy <strong>Nicolás Rincón</strong>, Ingeniero en Multimedia egresado de la 
+          <strong>Universidad Militar Nueva Granada</strong>. Apasionado por el diseño digital y la tecnología, 
+          especializado en <strong>UI/UX</strong>. Combino creatividad y funcionalidad para diseñar 
+          interfaces intuitivas y experiencias centradas en el usuario. Manejo herramientas como 
+          <strong>HTML, CSS y Python</strong>, además de contar con experiencia en modelado y animación 3D. 
+          Siempre busco nuevos desafíos que impulsen mi crecimiento profesional y creativo.
+        </p>
+        <div class="buttons">
+          <a href="https://wa.me/573000000000" class="btn btn-primary">Contáctame</a>
+          <a href="NicolasRinconHV-Nov2025.pdf" class="btn btn-outline" download>Descargar CV</a>
+        </div>
+      </div>
     </div>
   </section>
 
+  <!-- ======== EDUCACIÓN ======== -->
+  <section id="educacion" class="section education">
+    <h2>Educación</h2>
+    <div class="education-item">
+      <h3>Universidad Militar Nueva Granada</h3>
+      <p>Pregrado - 2024</p>
+    </div>
+    <div class="education-item">
+      <h3>Diplomado de Gerencia de Proyectos PMI</h3>
+      <p>2024</p>
+    </div>
+  </section>
+
+  <!-- ======== EXPERIENCIA ======== -->
+  <section id="experiencia" class="section experience">
+    <h2>Experiencia</h2>
+    <div class="experience-item">
+      <h3>Colvatel - 2024</h3>
+      <p>En el cargo de practicante de Ingeniería en Multimedia, mis responsabilidades incluyeron la 
+        gestión y mantenimiento de la página web de la empresa, así como el uso de herramientas de Adobe 
+        para crear piezas de diseño destinadas tanto a los clientes como a los empleados internos.</p>
+    </div>
+    <div class="experience-item">
+      <h3>AMS Mercadeo en Salud - 2025</h3>
+      <p>Encargado del diseño y desarrollo de landing pages en WordPress con Elementor, optimizadas para 
+        SEO y experiencia de usuario. Creación de banners y piezas visuales para redes sociales y sitios 
+        web del sector salud. Participación en estrategias digitales y optimización de la identidad visual 
+        de marcas médicas.</p>
+    </div>
+  </section>
+
+  <!-- ======== CONTACTO ======== -->
+  <section id="contacto" class="section contact">
+    <h2>Contáctame</h2>
+    <p>¿Tienes un proyecto o idea en mente? ¡Hablemos y hagámoslo realidad!</p>
+    <a href="https://wa.me/573000000000" class="btn btn-primary cta">Escríbeme en WhatsApp</a>
+  </section>
+
+  <!-- ======== FOOTER ======== -->
   <footer>
-    <p>© 2025 Nicolás Rincón | <a href="mailto:nicolasrincon@email.com">Contáctame</a></p>
+    <p class="phrase">“El diseño no es solo cómo se ve, sino cómo funciona.” – Steve Jobs</p>
+    <div class="socials">
+      <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+      <a href="https://www.behance.net" target="_blank">Behance</a>
+      <a href="https://github.com" target="_blank">GitHub</a>
+      <a href="mailto:nicolasrincon@email.com">Email</a>
+    </div>
+    <p class="copy">© 2025 Nicolás Rincón</p>
   </footer>
+
 </body>
 </html>
