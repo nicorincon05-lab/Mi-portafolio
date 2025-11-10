@@ -8,7 +8,7 @@ body {
   font-family: 'Poppins', sans-serif;
   background-color: #0f1115;
   color: #fff;
-  line-height: 1.6;
+  scroll-behavior: smooth;
 }
 
 /* ===== NAVBAR ===== */
@@ -23,6 +23,7 @@ body {
   padding: 1rem 3rem;
   box-shadow: 0 2px 8px rgba(0,0,0,0.3);
   z-index: 10;
+  backdrop-filter: blur(10px);
 }
 
 .logo-area {
@@ -59,7 +60,7 @@ body {
 
 /* ===== SECTIONS ===== */
 .section {
-  padding: 100px 20px;
+  padding: 110px 20px;
   max-width: 1100px;
   margin: auto;
 }
@@ -68,6 +69,7 @@ body {
   color: #00ffaa;
   margin-bottom: 20px;
   font-size: 2rem;
+  text-align: center;
 }
 
 /* ===== SOBRE MÍ ===== */
@@ -76,6 +78,7 @@ body {
   align-items: center;
   flex-wrap: wrap;
   gap: 40px;
+  justify-content: center;
 }
 
 .about-img img {
@@ -87,10 +90,14 @@ body {
   box-shadow: 0 0 20px rgba(0,255,170,0.3);
 }
 
+.about-text {
+  max-width: 600px;
+  text-align: justify;
+}
+
 .about-text p {
   color: #ddd;
-  max-width: 600px;
-  font-size: 1.1rem;
+  font-size: 1.05rem;
 }
 
 .buttons {
@@ -135,8 +142,32 @@ body {
   border-left: 4px solid #00ffaa;
 }
 
-.education-item h3, .experience-item h3 {
-  color: #fff;
+/* ===== PROYECTOS ===== */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.project-card {
+  background: #181b21;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0,255,170,0.2);
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  height: 180px;
+  object-fit: cover;
 }
 
 /* ===== CONTACTO ===== */
@@ -187,16 +218,30 @@ footer {
   color: #666;
 }
 
+/* ===== ANIMACIONES ===== */
+.fade-in {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease-out;
+}
+
+.fade-in.appear {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 /* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
-  .about-content {
-    flex-direction: column;
-    text-align: center;
-  }
   .navbar {
     flex-direction: column;
     gap: 10px;
   }
+
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
   .nav-links {
     flex-wrap: wrap;
     justify-content: center;
