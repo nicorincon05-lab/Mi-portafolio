@@ -5,137 +5,100 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portafolio - Nicolás Rincón</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
+  <header>
+    <h1>NR | Portafolio</h1>
+    <nav>
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#educacion">Educación</a>
+      <a href="#experiencia">Experiencia</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#contacto">Contáctame</a>
+    </nav>
+    <button class="toggle-theme" id="themeToggle">🌙</button>
+  </header>
 
-  <!-- ===== NAVBAR ===== -->
-  <nav class="navbar">
-    <div class="logo-area">
-      <img src="Logo.png" alt="Logo" class="logo">
-      <h1 class="name">Nicolás Rincón</h1>
-    </div>
-    <ul class="nav-links">
-      <li><a href="#sobre-mi">Sobre mí</a></li>
-      <li><a href="#educacion">Educación</a></li>
-      <li><a href="#experiencia">Experiencia</a></li>
-      <li><a href="#proyectos">Proyectos</a></li>
-      <li><a href="#contacto">Contáctame</a></li>
-    </ul>
-  </nav>
-
-  <!-- ===== SOBRE MÍ ===== -->
-  <section id="sobre-mi" class="section about fade-in">
-    <div class="about-content">
-      <div class="about-img">
-        <img src="perfil.jpg" alt="Foto Nicolás Rincón">
+  <section id="sobre-mi" class="about">
+    <img src="perfil.jpg" alt="Nicolás Rincón" />
+    <div class="about-text">
+      <h2>Sobre mí</h2>
+      <p>
+        Soy <b>Nicolás Rincón</b>, Ingeniero en Multimedia egresado de la <b>Universidad Militar Nueva Granada</b>. 
+        Apasionado por el diseño digital y la tecnología, especializado en <b>UI/UX</b>. 
+        Combino creatividad y funcionalidad para diseñar interfaces intuitivas y experiencias centradas en el usuario. 
+        Manejo herramientas como <b>HTML, CSS y Python</b>, además de contar con experiencia en modelado y animación 3D. 
+        Siempre busco nuevos desafíos que impulsen mi crecimiento profesional y creativo.
+      </p>
+      <div class="btn-group">
+        <a href="https://wa.me/573188631450" class="btn">Contactarme</a>
+        <a href="NicolasRinconHV-Nov2025.pdf" class="btn">Descargar CV</a>
       </div>
-      <div class="about-text">
-        <h2>Sobre mí</h2>
-        <p>
-          Soy <strong>Nicolás Rincón</strong>, Ingeniero en Multimedia egresado de la 
-          <strong>Universidad Militar Nueva Granada</strong>. Apasionado por el diseño digital y la tecnología, 
-          especializado en <strong>UI/UX</strong>. Combino creatividad y funcionalidad para diseñar 
-          interfaces intuitivas y experiencias centradas en el usuario. Manejo herramientas como 
-          <strong>HTML, CSS y Python</strong>, además de contar con experiencia en modelado y animación 3D. 
-          Siempre busco nuevos desafíos que impulsen mi crecimiento profesional y creativo.
-        </p>
-        <div class="buttons">
-          <a href="https://wa.me/573188631450" class="btn btn-primary">Contáctame</a>
-          <a href="NicolasRinconHV-Nov2025.pdf" class="btn btn-outline" download>Descargar CV</a>
+    </div>
+  </section>
+
+  <section id="educacion" class="education">
+    <h2>Educación</h2>
+    <p><b>UNIVERSIDAD MILITAR NUEVA GRANADA</b> <br>
+    Pregrado - 2024</p>
+    <p><b>DIPLOMADO DE GERENCIA DE PROYECTOS PMI</b> <br>
+    2024</p>
+  </section>
+
+  <section id="experiencia" class="experience">
+    <h2>Experiencia</h2>
+    <p><b>Colvatel - 2024:</b> En el cargo de practicante de Ingeniería en Multimedia, mis responsabilidades incluyeron la gestión y mantenimiento de la página web de la empresa, así como la creación de piezas de diseño en Adobe para clientes y empleados internos.</p>
+    <p><b>AMS Mercadeo en Salud - 2025:</b> Encargado del diseño y desarrollo de landing pages en WordPress con Elementor, optimizadas para SEO y experiencia de usuario. Creación de banners y piezas visuales para redes sociales y sitios web del sector salud.</p>
+  </section>
+
+  <section id="proyectos" class="projects">
+    <h2>Proyectos Completados</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <img src="proyecto1.jpg" alt="Proyecto 1" />
+        <div class="content">
+          <h3>Rediseño página web AMS</h3>
+          <p>Se realizó un <b>rediseño completo del sitio web</b>, adaptando la estética y estructura según los <b>gustos y requerimientos del cliente</b>. Se incorporaron <b>animaciones sutiles y transiciones fluidas</b> para aportar un tono <b>creativo, moderno y profesional</b>. Además, se <b>optimizaron los tiempos de carga y el posicionamiento SEO</b>, mejorando el rendimiento y la visibilidad del sitio en motores de búsqueda.</p>
+          <a href="www.mercadeosalud.com" class="btn">Ver Proyecto</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="assets/proyecto2.jpg" alt="Proyecto 2" />
+        <div class="content">
+          <h3>Landing Page AMS</h3>
+          <p>Desarrollo y optimización SEO para empresa del sector salud.</p>
+          <a href="#" class="btn">Ver Proyecto</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="Home.png" alt="Proyecto 3" />
+        <div class="content">
+          <h3>Prototipo app movil</h3>
+          <p>Se desarrolló un <b>prototipo interactivo de una aplicación de adopción animal</b> utilizando <b>Figma</b>, aplicando principios de <b>diseño UI/UX</b> para crear una experiencia intuitiva, accesible y emocionalmente conectada con el usuario. El proyecto incluyó la definición de flujos de navegación, jerarquía visual y componentes interactivos orientados a facilitar el proceso de adopción y promover la empatía hacia los animales.</p>
+          <a href="https://www.figma.com/proto/7OFmME3tlMToTUsmeb3Msv/ADOPT-ME--Community-?node-id=4-331&starting-point-node-id=4%3A331&t=oVX9sY7WlCBjxWl8-1" class="btn">Ver Proyecto</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ===== EDUCACIÓN ===== -->
-  <section id="educacion" class="section education fade-in">
-    <h2>Educación</h2>
-    <div class="education-item">
-      <h3>Universidad Militar Nueva Granada</h3>
-      <p>Pregrado - 2024</p>
-    </div>
-    <div class="education-item">
-      <h3>Diplomado de Gerencia de Proyectos PMI</h3>
-      <p>2024</p>
-    </div>
-  </section>
-
-  <!-- ===== EXPERIENCIA ===== -->
-  <section id="experiencia" class="section experience fade-in">
-    <h2>Experiencia</h2>
-    <div class="experience-item">
-      <h3>Colvatel - 2024</h3>
-      <p>En el cargo de practicante de Ingeniería en Multimedia, mis responsabilidades incluyeron la 
-        gestión y mantenimiento de la página web de la empresa, así como el uso de herramientas de Adobe 
-        para crear piezas de diseño destinadas tanto a los clientes como a los empleados internos.</p>
-    </div>
-    <div class="experience-item">
-      <h3>AMS Mercadeo en Salud - 2025</h3>
-      <p>Encargado del diseño y desarrollo de landing pages en WordPress con Elementor, optimizadas para 
-        SEO y experiencia de usuario. Creación de banners y piezas visuales para redes sociales y sitios 
-        web del sector salud. Participación en estrategias digitales y optimización de la identidad visual 
-        de marcas médicas.</p>
-    </div>
-  </section>
-
-  <!-- ===== PROYECTOS COMPLETADOS ===== -->
-  <section id="proyectos" class="section projects fade-in">
-    <h2>Proyectos Completados</h2>
-    <div class="projects-grid">
-      <div class="project-card">
-        <img src="proyecto1.jpg" alt="Proyecto 1">
-        <h3>Landing Page Médica</h3>
-        <p>Diseño y desarrollo de una landing page optimizada para clínicas y servicios de salud.</p>
-        <a href="https://mercadeosalud.com/" class="btn btn-primary">Ver Proyecto</a>
-      </div>
-      <div class="project-card">
-        <img src="proyecto2.jpg" alt="Proyecto 2">
-        <h3>App de Citas UI/UX</h3>
-        <p>Diseño centrado en el usuario para un sistema de agendamiento médico digital.</p>
-        <a href="#" class="btn btn-primary">Ver Proyecto</a>
-      </div>
-      <div class="project-card">
-        <img src="proyecto3.jpg" alt="Proyecto 3">
-        <h3>Dashboard Interactivo</h3>
-        <p>Diseño de interfaz funcional y atractiva para visualización de datos de usuarios.</p>
-        <a href="#" class="btn btn-primary">Ver Proyecto</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== CONTACTO ===== -->
-  <section id="contacto" class="section contact fade-in">
+  <section id="contacto" class="contact">
     <h2>Contáctame</h2>
-    <p>¿Tienes un proyecto o idea en mente? ¡Hablemos y hagámoslo realidad!</p>
-    <a href="https://wa.me/573188631450" class="btn btn-primary cta">Escríbeme en WhatsApp</a>
+    <a href="https://wa.me/573188631450">💬 Escríbeme por WhatsApp</a>
   </section>
 
-  <!-- ===== FOOTER ===== -->
   <footer>
-    <p class="phrase">“El diseño no es solo cómo se ve, sino cómo funciona.” – Steve Jobs</p>
     <div class="socials">
-      <a href="https://www.linkedin.com/in/nicolas-rincon05/" target="_blank">LinkedIn</a>
-      <a href="mailto:nicolasrincon@email.com">Email</a>
+      <a href="https://www.linkedin.com/in/nicolas-rincon05/">LinkedIn</a>
     </div>
-    <p class="copy">© 2025 Nicolás Rincón</p>
+    <p>“El diseño no es solo lo que ves, sino cómo lo experimentas.”</p>
   </footer>
 
   <script>
-    // Animaciones suaves al hacer scroll
-    const faders = document.querySelectorAll('.fade-in');
-    const appearOptions = { threshold: 0.2 };
-
-    const appearOnScroll = new IntersectionObserver(function(entries, observer) {
-      entries.forEach(entry => {
-        if (!entry.isIntersecting) return;
-        entry.target.classList.add('appear');
-        observer.unobserve(entry.target);
-      });
-    }, appearOptions);
-
-    faders.forEach(fader => appearOnScroll.observe(fader));
+    const toggle = document.getElementById('themeToggle');
+    toggle.addEventListener('click', () => {
+      document.body.classList.toggle('dark');
+      toggle.textContent = document.body.classList.contains('dark') ? '☀️' : '🌙';
+    });
   </script>
-
 </body>
 </html>
