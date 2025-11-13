@@ -1,124 +1,142 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portafolio - Nicolás Rincón</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio de Nicolás Rincón, diseñador UI/UX especializado en proyectos web para el sector salud con enfoque en SEO y conversión.">
+    <meta name="keywords" content="Diseñador web, UI/UX, SEO médico, páginas web salud, diseño responsivo, landing pages, WordPress, Elementor">
+    <meta name="author" content="Nicolás Rincón">
+    <title>Portafolio - Nicolás Rincón</title>
+
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>NR | Portafolio</h1>
-    <nav>
-      <a href="#sobre-mi">Sobre mí</a>
-      <a href="#educacion">Educación</a>
-      <a href="#experiencia">Experiencia</a>
-      <a href="#proyectos">Proyectos</a>
-      <a href="#contacto">Contáctame</a>
-    </nav>
-    <button class="toggle-theme" id="themeToggle">🌙</button>
-  </header>
+    <!-- HEADER -->
+    <header class="navbar">
+        <div class="logo">NR</div>
+        <nav>
+            <ul>
+                <li><a href="#about">Sobre mí</a></li>
+                <li><a href="#education">Educación</a></li>
+                <li><a href="#experience">Experiencia</a></li>
+                <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#contact">Contáctame</a></li>
+            </ul>
+        </nav>
+        <button id="theme-toggle" class="theme-btn">🌙</button>
+    </header>
 
-  <section id="sobre-mi" class="about">
-    <img src="perfil.jpg" alt="Nicolás Rincón" />
-    <div class="about-text">
-      <h2>Sobre mí</h2>
-      <p>
-        Soy <b>Nicolás Rincón</b>, Ingeniero en Multimedia egresado de la <b>Universidad Militar Nueva Granada</b>. 
-        Apasionado por el diseño digital y la tecnología, especializado en <b>UI/UX</b>. 
-        Combino creatividad y funcionalidad para diseñar interfaces intuitivas y experiencias centradas en el usuario. 
-        Manejo herramientas como <b>HTML, CSS y Python</b>, además de contar con experiencia en modelado y animación 3D. 
-        Siempre busco nuevos desafíos que impulsen mi crecimiento profesional y creativo.
-      </p>
-      <div class="btn-group">
-        <a href="https://wa.me/573188631450" class="btn">Contactarme</a>
-        <a href="NicolasRinconHV-Nov2025.pdf" class="btn">Descargar CV</a>
-      </div>
-    </div>
-  </section>
-
-  <section id="educacion" class="education">
-    <h2>Educación</h2>
-    <h3>Ingeniería en Multimedia</h3>
-    <p><b>UNIVERSIDAD MILITAR NUEVA GRANADA</b> <br>
-    Pregrado - 2024</p>
-    <h3>Diplomado de gerencia de proyectos PMI</h3>
-    <p><b>UNIVERSIDAD MILITAR NUEVA GRANADA</b> <br>
-    2024</p>
-  </section>
-
-  <section id="experiencia" class="experience">
-    <h2>Experiencia</h2>
-    <p><b>Colvatel - 2024:</b> En el cargo de practicante de Ingeniería en Multimedia, mis responsabilidades incluyeron la gestión y mantenimiento de la página web de la empresa, así como la creación de piezas de diseño en Adobe para clientes y empleados internos.</p>
-    <p><b>AMS Mercadeo en Salud - 2025:</b> Encargado del diseño y desarrollo de landing pages en WordPress con Elementor, optimizadas para SEO y experiencia de usuario. Creación de banners y piezas visuales para redes sociales y sitios web del sector salud.</p>
-  </section>
-
-  <section id="proyectos" class="projects">
-    <h2>Proyectos Completados</h2>
-    <div class="project-grid">
-      <div class="project-card">
-        <img src="proyecto1.jpg" alt="Proyecto 1" />
-        <div class="content">
-          <h3>Rediseño página web AMS</h3>
-          <p>Se realizó un <b>rediseño completo del sitio web</b>, adaptando la estética y estructura según los <b>gustos y requerimientos del cliente</b>. Se incorporaron <b>animaciones sutiles y transiciones fluidas</b> para aportar un tono <b>creativo, moderno y profesional</b>. Además, se <b>optimizaron los tiempos de carga y el posicionamiento SEO</b>, mejorando el rendimiento y la visibilidad del sitio en motores de búsqueda.</p>
-          <a href="www.mercadeosalud.com" class="btn">Ver Proyecto</a>
+    <!-- SOBRE MI -->
+    <section id="about" class="section about" data-aos="fade-up">
+        <div class="about-content">
+            <div class="profile-img"></div>
+            <div class="about-text">
+                <h1>Sobre mí</h1>
+                <p>Soy <strong>Nicolás Rincón</strong>, Ingeniero en Multimedia egresado de la Universidad Militar Nueva Granada. Apasionado por el diseño digital y la tecnología, especializado en UI/UX. Combino creatividad y funcionalidad para diseñar interfaces intuitivas y experiencias centradas en el usuario. Manejo herramientas como HTML, CSS y Python, además de contar con experiencia en modelado y animación 3D. Siempre busco nuevos desafíos que impulsen mi crecimiento profesional y creativo.</p>
+                <div class="buttons">
+                    <a href="#contact" class="btn primary">Contáctame</a>
+                    <a href="NicolasRinconHV-Nov2025.pdf" class="btn secondary" download>Descargar CV</a>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="project-card">
-        <img src="assets/proyecto2.jpg" alt="Proyecto 2" />
-        <div class="content">
-          <h3>Diseño Web y Posicionamiento SEO</h3>
-          <p>Como <strong>diseñador web especializado en el sector salud</strong>, me enfoco en crear sitios optimizados para la conversión de pacientes y la visibilidad en buscadores. A través de estrategias de <strong>UX/UI y posicionamiento SEO</strong>, he contribuido al crecimiento digital de diversas entidades médicas, clínicas y laboratorios.</p>
-          <p>Algunos de mis proyectos destacados incluyen:
-          <ul>
-            <li>
-              <a href="https://www.neurocontry.com" target="_blank">NeuroContry</a> — Optimización SEO y rediseño centrado en experiencia del paciente.
-            </li>
-            <li>
-              <a href="https://www.laboratorioeduardofernandez.com" target="_blank">Laboratorio Eduardo Fernández</a> — Mejora en velocidad de carga y estructura de agendamiento.
-            </li>
-            <li>
-              <a href="https://www.urointegral.com" target="_blank">Urointegral</a> — Estrategia de posicionamiento local y rediseño visual enfocado en confianza y claridad.
-            </li>
-            <li>
-              <a href="https://www.transalud.com" target="_blank">Transalud</a> — Implementación de formularios personalizados y SEO técnico.
-            </li>
-            <li>
-              <a href="https://www.clinicaparamo.com" target="_blank">Clínica Páramo</a> — Diseño UI/UX centrado en accesibilidad y conversión.
-            </li>
-          </ul>
-        </p>
+    </section>
+
+    <!-- EDUCACION -->
+    <section id="education" class="section" data-aos="fade-up">
+        <h2>Educación</h2>
+        <div class="edu-card">
+          <h3>Universidad Militar Nieva Granada</h3>
+            <p><strong>Ingeniería en Multimedia</strong><br>Pregrado – 2024</p>
+            <p><strong>Diplomado en Gerencia de Proyectos PMI</strong><br>2024</p>
         </div>
-      </div>
-      <div class="project-card">
-        <img src="Home.png" alt="Proyecto 3" />
-        <div class="content">
-          <h3>Prototipo app movil</h3>
-          <p>Se desarrolló un <b>prototipo interactivo de una aplicación de adopción animal</b> utilizando <b>Figma</b>, aplicando principios de <b>diseño UI/UX</b> para crear una experiencia intuitiva, accesible y emocionalmente conectada con el usuario. El proyecto incluyó la definición de flujos de navegación, jerarquía visual y componentes interactivos orientados a facilitar el proceso de adopción y promover la empatía hacia los animales.</p>
-          <a href="https://www.figma.com/proto/7OFmME3tlMToTUsmeb3Msv/ADOPT-ME--Community-?node-id=4-331&starting-point-node-id=4%3A331&t=oVX9sY7WlCBjxWl8-1" class="btn">Ver Proyecto</a>
+    </section>
+
+    <!-- EXPERIENCIA -->
+    <section id="experience" class="section" data-aos="fade-up">
+        <h2>Experiencia</h2>
+        <div class="exp-card">
+            <h3>Colvatel – 2024</h3>
+            <p>En el cargo de practicante de Ingeniería en Multimedia, mis responsabilidades incluyeron la gestión y mantenimiento de la página web de la empresa, así como el uso de herramientas de Adobe para crear piezas de diseño destinadas tanto a los clientes como a los empleados internos.</p>
         </div>
-      </div>
-    </div>
-  </section>
+        <div class="exp-card">
+            <h3>AMS Mercadeo en Salud – 2025</h3>
+            <p>Encargado del diseño y desarrollo de landing pages en WordPress con Elementor, optimizadas para SEO y experiencia de usuario. Creación de banners y piezas visuales para redes sociales y sitios web del sector salud. Participación en estrategias digitales y optimización de la identidad visual de marcas médicas.</p>
+        </div>
+    </section>
 
-  <section id="contacto" class="contact">
-    <h2>Contáctame</h2>
-    <a href="https://wa.me/573188631450">💬 Escríbeme por WhatsApp</a>
-  </section>
+    <!-- PROYECTOS -->
+    <section id="projects" class="section" data-aos="fade-up">
+        <h2>Proyectos Completados</h2>
+        <div class="projects-grid">
+            <div class="card">
+                <img src="proyecto1.jpg" alt="Proyecto Rediseño web AMS">
+                <h3><a href="https://www.mercadeosalud.com" target="_blank">AMS Agencia de Mercadeo en Salud</a></h3>
+                <p>Se desarrollo un rediseño de la web donde me destaque por entender y plasmar las ideas que se requerian. Además, se optimizaron los tiempos de carga y el posicionamiento SEO, mejorando el rendimiento y la visibilidad del sitio en motores de búsqueda.</p>
+                <a href="https://www.mercadeosalud.com" target="_blank" class="btn small">Ver Proyecto</a>
+            </div>
+            <div class="card">
+                <h3>Diseño Web y Posicionamiento SEO</h3>
+                <p>Como <strong>diseñador web especializado en el sector salud</strong>, me enfoco en crear sitios optimizados para la conversión de pacientes y la visibilidad en buscadores. A través de estrategias de <strong>UX/UI y posicionamiento SEO</strong>, he contribuido al crecimiento digital de diversas entidades médicas, clínicas y laboratorios.</p>
+                <p>Algunos de mis proyectos destacados incluyen:
+                <ul>
+                  <li>
+                    <a href="https://www.neurocontry.com" target="_blank">NeuroContry</a> — Optimización SEO y rediseño centrado en experiencia del paciente.
+                  </li>
+                  <li>
+                    <a href="https://www.laboratorioeduardofernandez.com" target="_blank">Laboratorio Eduardo Fernández</a> — Mejora en velocidad de carga y estructura de agendamiento.
+                  </li>
+                  <li>
+                    <a href="https://www.urointegral.com" target="_blank">Urointegral</a> — Estrategia de posicionamiento local y rediseño visual enfocado en confianza y claridad.
+                  </li>
+                  <li>
+                    <a href="https://www.transalud.com" target="_blank">Transalud</a> — Implementación de formularios personalizados y SEO técnico.
+                  </li>
+                </ul>
+              </p>
+            </div>
+            <div class="card">
+                <img src="Home.png" alt="Prototipo App movil">
+                <h3><a href="https://www.figma.com/proto/7OFmME3tlMToTUsmeb3Msv/ADOPT-ME--Community-?node-id=4-331&starting-point-node-id=4%3A331&t=oVX9sY7WlCBjxWl8-1" target="_blank">Prototipo app movil</a></h3>
+                <p>Usando la herramienta Figma, se desarrolló un prototipo interactivo de una aplicación de adopción animal utilizando Figma, aplicando principios de diseño UI/UX para crear una experiencia intuitiva, accesible y emocionalmente conectada con el usuario. El proyecto incluyó la definición de flujos de navegación, jerarquía visual y componentes interactivos orientados a facilitar el proceso de adopción y promover la empatía hacia los animales.</p>
+                <a href="https://www.figma.com/proto/7OFmME3tlMToTUsmeb3Msv/ADOPT-ME--Community-?node-id=4-331&starting-point-node-id=4%3A331&t=oVX9sY7WlCBjxWl8-1" target="_blank" class="btn small">Ver Prototipo</a>
+            </div>
+        </div>
+    </section>
 
-  <footer>
-    <div class="socials">
-      <a href="https://www.linkedin.com/in/nicolas-rincon05/">LinkedIn</a>
-    </div>
-    <p>“El diseño no es solo lo que ves, sino cómo lo experimentas.”</p>
-  </footer>
+    <!-- CONTACTO -->
+    <section id="contact" class="section contact" data-aos="fade-up">
+        <h2>Contáctame</h2>
+        <p>¿Tienes un proyecto o quieres impulsar tu marca en el sector salud? ¡Hablemos!</p>
+        <a href="https://wa.me/573188631450" target="_blank" class="btn primary whatsapp">💬 Escríbeme por WhatsApp</a>
+    </section>
 
-  <script>
-    const toggle = document.getElementById('themeToggle');
-    toggle.addEventListener('click', () => {
-      document.body.classList.toggle('dark');
-      toggle.textContent = document.body.classList.contains('dark') ? '☀️' : '🌙';
-    });
-  </script>
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>Sígueme en:</p>
+        <div class="social">
+            <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+        </div>
+        <p class="quote">“El buen diseño es aquel que transforma la experiencia del usuario en algo memorable.”</p>
+    </footer>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1000, once: true });
+
+        // Toggle Dark Mode
+        const toggle = document.getElementById('theme-toggle');
+        toggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark');
+            toggle.textContent = document.body.classList.contains('dark') ? '☀️' : '🌙';
+        });
+    </script>
 </body>
 </html>
